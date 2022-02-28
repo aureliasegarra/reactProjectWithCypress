@@ -15,8 +15,12 @@
   ],
   "courses": [
     {
-      "name": "hi",
+      "name": "Learn Cypress",
       "id": 1
+    },
+    {
+      "name": "Learn React",
+      "id": 2
     }
   ]
 }
