@@ -48,9 +48,10 @@ class LoginForm extends React.Component {
                     Username:
                     <br />
                     <input
+                        data-cy="email-field"
                         className="login-input"
                         onChange={this.onInputChange}
-                        placeholder="Enter username"
+                        placeholder="Enter your email"
                         name="username"
                         value={this.state.fields.username}
                         type="text"
@@ -58,6 +59,7 @@ class LoginForm extends React.Component {
                     Password:
                     <br />
                     <input
+                        data-cy="password-field"
                         className="login-input"
                         onChange={this.onInputChange}
                         placeholder="Enter password"
@@ -66,10 +68,10 @@ class LoginForm extends React.Component {
                         type="password"
                     />
                     <input
+                        data-cy="login-button"
                         className="login-button"
                         type="submit"
                         value="Login"
-                        data-cy="login_button"
                     />
                 </form>
 
