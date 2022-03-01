@@ -1,30 +1,33 @@
 /// <reference types="Cypress" />
 
+import * as LoginComponent from "../components/login_component";
+import * as HeaderComponent from "../components/header_component";
+import * as CourseComponent from "../components/course_component";
+
 describe("Testing all the functionnalities", () => {
   beforeEach(() => {
     cy.visit('/login');
   });
 
   it('Testing login with normal email and password', () => {
-    cy.get('[data-cy= "email-field"]').type('user');
-    cy.get('[data-cy= "password-field"]').type('user');
-    cy.get('[data-cy="login-button"]').click();
-    //cy.url().should('contain', '/courses');
-    cy.get('[data-cy="signout-button"]').should('be.visible');
+    LoginComponent.emailField().type('user');
+    LoginComponent.passwordField().type('user');
+    LoginComponent.loginButton().click();
+    HeaderComponent.signoutButton().should('be.visible');
   });
 
   /* ==== Test Created with Cypress Studio ==== */
   it('Should login correctly as an admin user', function() {
     /* ==== Generated with Cypress Studio ==== */
-    cy.get('[data-cy="email-field"]').clear();
-    cy.get('[data-cy="email-field"]').type('admin');
-    cy.get('[data-cy="password-field"]').clear();
-    cy.get('[data-cy="password-field"]').type('admin');
-    cy.get('[data-cy="login-button"]').click();
-    cy.get('[data-cy="signout-button"]').should('be.visible');
-    cy.get('[data-cy="courses-button"]').click();
+    LoginComponent.emailField().clear();
+    LoginComponent.emailField().type('admin');
+    LoginComponent.passwordField().clear();
+    LoginComponent.passwordField().type('admin');
+    LoginComponent.loginButton().click();
+    HeaderComponent.signoutButton().should('be.visible');
+    CourseComponent.coursesButton().click();
     cy.url().should('contain', '/courses');
-    cy.get('[data-cy="delete-button"]').should('be.visible');
+    CourseComponent.deleteButton().should('be.visible');
     /* ==== End Cypress Studio ==== */
   });
 });
