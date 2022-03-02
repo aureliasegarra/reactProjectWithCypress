@@ -10,19 +10,14 @@ describe("Testing all the functionnalities", () => {
   });
 
   it('Testing login with normal email and password', () => {
-    LoginComponent.emailField().type('user');
-    LoginComponent.passwordField().type('user');
-    LoginComponent.loginButton().click();
+    LoginComponent.performLogin('user', 'user');
     HeaderComponent.signoutButton().should('be.visible');
   });
 
   /* ==== Test Created with Cypress Studio ==== */
   it('Should login correctly as an admin user', function() {
     /* ==== Generated with Cypress Studio ==== */
-    LoginComponent.emailField().clear();
-    LoginComponent.emailField().type('admin');
-    LoginComponent.passwordField().clear();
-    LoginComponent.passwordField().type('admin');
+    LoginComponent.performLogin('admin', 'admin');
     LoginComponent.loginButton().click();
     HeaderComponent.signoutButton().should('be.visible');
     CourseComponent.coursesButton().click();
