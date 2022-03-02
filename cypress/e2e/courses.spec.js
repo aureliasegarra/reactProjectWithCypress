@@ -10,10 +10,9 @@ describe('Testing courses functionalities', () => {
             //Utils.loginWithAPI('admin', 'admin');
             Utils.visitAPage('login');
             LoginComponent.performLogin('admin', 'admin');
-            
         });
 
-        it('Admin user should see delete button', () => {
+        it('Admin user should see course delete button', () => {
             CourseComponent.coursesButton().click();
             Utils.checkURL().should('contain', '/courses');
             CourseComponent.deleteButton().should('be.visible');
@@ -26,10 +25,25 @@ describe('Testing courses functionalities', () => {
             CourseComponent.deleteButton().should('have.length', 3);
         });
 
-        it('Should be able to delete a task', () => {
+        it('Should be able to delete a course', () => {
             Utils.visitAPage('courses');
             CourseComponent.deleteButton().last().click();
             CourseComponent.deleteButton().should('have.length', 2);
         });
-    })
+    });
+
+    context.only('Testing functionalities as a normal user', () => {
+        beforeEach(() => {
+            Utils.visitAPage('login');
+            LoginComponent.performLogin('user', 'user');
+        });
+
+        it('Normal user should be able to see all the courses', () => {
+            CourseComponent.coursesButton().click();
+            CourseComponent.courseName().should('have.length', 8);
+            CourseComponent.deleteButton().should('not.exist');
+        });
+
+    });
+
 })
