@@ -32,7 +32,7 @@ describe('Testing courses functionalities', () => {
         });
     });
 
-    context.only('Testing functionalities as a normal user', () => {
+    context('Testing functionalities as a normal user', () => {
         beforeEach(() => {
             Utils.visitAPage('login');
             LoginComponent.performLogin('user', 'user');
