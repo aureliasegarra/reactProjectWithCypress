@@ -3,10 +3,11 @@
 import * as LoginComponent from "../components/login_component";
 import * as HeaderComponent from "../components/header_component";
 import * as CourseComponent from "../components/course_component";
+import * as Utils from "../support/utils";
 
 describe("Testing all the functionnalities", () => {
   beforeEach(() => {
-    cy.visit('/login');
+    Utils.visitAPage('login');
   });
 
   it('Testing login with normal email and password', () => {
@@ -21,7 +22,7 @@ describe("Testing all the functionnalities", () => {
     LoginComponent.loginButton().click();
     HeaderComponent.signoutButton().should('be.visible');
     CourseComponent.coursesButton().click();
-    cy.url().should('contain', '/courses');
+    Utils.checkURL().should('contain', '/courses');
     CourseComponent.deleteButton().should('be.visible');
     /* ==== End Cypress Studio ==== */
   });
