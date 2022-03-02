@@ -4,7 +4,7 @@ export const visitAPage = (path) => {
 
 export const checkURL = () => cy.url();
 
-/*
+
 export const loginWithAPI = () => {
     cy.request({
         method: 'GET',
@@ -20,4 +20,3 @@ export const loginWithAPI = () => {
         localStorage.setItem('userToken', response.body.role);
     })
 }
-*/

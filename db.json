@@ -21,6 +21,10 @@
     {
       "name": "Learn React",
       "id": 2
+    },
+    {
+      "name": "Learn Vue",
+      "id": 3
     }
   ]
 }

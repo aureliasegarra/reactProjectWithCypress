@@ -6,7 +6,8 @@
     "scripts": {
         "start": "run-p server client",
         "server": "node server.js",
-        "client": "node client.js"
+        "client": "node client.js",
+        "test": "npx cypress open"
     },
     "author": "Hatem Hatamleh",
     "license": "ISC",
