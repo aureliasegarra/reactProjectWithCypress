@@ -19,7 +19,6 @@ describe("Testing all the functionnalities", () => {
   it('Should login correctly as an admin user', function() {
     /* ==== Generated with Cypress Studio ==== */
     LoginComponent.performLogin('admin', 'admin');
-    LoginComponent.loginButton().click();
     HeaderComponent.signoutButton().should('be.visible');
     CourseComponent.coursesButton().click();
     Utils.checkURL().should('contain', '/courses');
