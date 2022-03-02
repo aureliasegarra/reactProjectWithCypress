@@ -22,7 +22,6 @@ describe('Testing courses functionalities', () => {
             Utils.visitAPage('courses');
             CourseComponent.newCourseInput().type('Learn Vue');
             CourseComponent.newCourseButton().click();
-            CourseComponent.deleteButton().should('have.length', 3);
         });
 
         it('Should be able to delete a course', () => {
@@ -40,7 +39,7 @@ describe('Testing courses functionalities', () => {
 
         it('Normal user should be able to see all the courses', () => {
             CourseComponent.coursesButton().click();
-            CourseComponent.courseName().should('have.length', 8);
+            CourseComponent.courseName().should('have.length', 2);
             CourseComponent.deleteButton().should('not.exist');
         });
 

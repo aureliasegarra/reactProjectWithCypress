@@ -7,7 +7,7 @@
         "start": "run-p server client",
         "server": "node server.js",
         "client": "node client.js",
-        "test": "npx cypress open"
+        "cy:run": "cypress run --record --key 05be3f37-4d90-4727-ae7c-b108a43cbdce"
     },
     "author": "Hatem Hatamleh",
     "license": "ISC",
