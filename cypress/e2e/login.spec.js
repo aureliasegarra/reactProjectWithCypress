@@ -1,5 +1,3 @@
-/// <reference types="Cypress" />
-
 import * as LoginComponent from "../components/login_component";
 import * as HeaderComponent from "../components/header_component";
 import * as CourseComponent from "../components/course_component";

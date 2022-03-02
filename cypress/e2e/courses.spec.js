@@ -7,13 +7,14 @@ describe('Testing courses functionalities', () => {
 
     context('Testing functionalities as an admin user', () => {
         beforeEach(() => {
-            Utils.loginWithAPI('admin', 'admin');
+            //Utils.loginWithAPI('admin', 'admin');
+            LoginComponent.performLogin('admin', 'admin');
             Utils.visitAPage('courses'); 
         })
 
         it('Admin user should see delete button', () => {
-            CourseComponent.coursesButton().click();
-            Utils.checkURL().should('contain', '/courses');
+            //CourseComponent.coursesButton().click();
+            //Utils.checkURL().should('contain', '/courses');
             CourseComponent.deleteButton().should('be.visible');
         })
     })
