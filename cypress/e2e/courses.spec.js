@@ -7,7 +7,6 @@ describe('Testing courses functionalities', () => {
 
     context('Testing functionalities as an admin user', () => {
         beforeEach(() => {
-            //Utils.loginWithAPI('admin', 'admin');
             Utils.visitAPage('login');
             LoginComponent.performLogin('admin', 'admin');
         });

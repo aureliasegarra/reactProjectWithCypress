@@ -8,7 +8,7 @@ const Course = ({ course, onDelete, userCanEditCourses }) => (
                 <label data-cy="course-name">{course.name}</label>
                 {userCanEditCourses && (
                     <button
-                        data-cy= "delete-button"
+                        data-cy="delete-button"
                         className="delete button"
                         onClick={() => onDelete(course)}
                     >
