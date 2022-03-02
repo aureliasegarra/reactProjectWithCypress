@@ -23,6 +23,13 @@ describe('Testing courses functionalities', () => {
             Utils.visitAPage('courses');
             CourseComponent.newCourseInput().type('Learn Vue');
             CourseComponent.newCourseButton().click();
+            CourseComponent.deleteButton().should('have.length', 3);
+        });
+
+        it('Should be able to delete a task', () => {
+            Utils.visitAPage('courses');
+            CourseComponent.deleteButton().last().click();
+            CourseComponent.deleteButton().should('have.length', 2);
         });
     })
 })
