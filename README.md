@@ -1,4 +1,5 @@
 #  :test_tube: Testing with Cypress
+[![reactProjectWithCypress](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/y9r3zb&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/y9r3zb/runs)
 
 ## 👉 Implementing tests with Cypress in a React application
 ### The code base of the application is the work of Hatem Hatamleh, Automation Test Engineer. This work is part of a training on Cypress.
