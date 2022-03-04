@@ -1,13 +1,12 @@
 #  :test_tube: Testing with Cypress
-[![reactProjectWithCypress](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/y9r3zb&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/y9r3zb/runs)
+
+[![Cypress - passed](https://img.shields.io/badge/Cypress-passed-2ea44f?logo=Cypress&logoColor=white)](https://)
 
 ## 👉 Implementing tests with Cypress in a React application
 ### The code base of the application is the work of Hatem Hatamleh, Automation Test Engineer. This work is part of a training on Cypress.
 
-## Illustration 📸
-### 🖥  Desktop illustration
-![desktop illustration]();
-
+## Illustration 
+...
 
 ## Language/tools 🛠
 - HTML5 / CSS3
@@ -19,9 +18,9 @@
 ## Goals 🏔
 - Implementing End-to-End tests with Cypress
 
-## How to use 🛠
+## How to use ⚙️
 
-### ⚙️ Launch the development server & meeting on http://localhost:3000/
+### Launch the development server & meeting on http://localhost:3000/
 
 ### Project setup
 Front
@@ -47,6 +46,6 @@ npm run server
 ## Status 🎯
 Project not completed
 
-## Context 🗓
+## Context 📆
 Project developed as a junior web developer. 
 I realized the implementation of these tests during my internship in BTS SIO SLAM. The subject of this internship, in the start up Iole Solutions, was about the integration of E2E tests in an application under development. This is one of the reasons that pushed me to get interested in Cypress
