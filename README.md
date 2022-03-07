@@ -6,7 +6,10 @@
 ### The code base of the application is the work of Hatem Hatamleh, Automation Test Engineer. This work is part of a training on Cypress.
 
 ## Illustration 
-...
+![illustration](screenshot.png)
+
+## Demo
+![Video](./demo.mov)
 
 ## Language/tools 🛠
 - HTML5 / CSS3
