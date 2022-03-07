@@ -8,8 +8,6 @@
 ## Illustration 
 ![illustration](screenshot.png)
 
-## Demo
-![Video](./demo.mov)
 
 ## Language/tools 🛠
 - HTML5 / CSS3
