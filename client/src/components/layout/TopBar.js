@@ -7,7 +7,7 @@ const TopBar = ({ logout }, context) => (
     <div>
         <nav>
             <Link className="brand" to="/">
-                QAcart
+                CypressDemo
             </Link>
             <input id="bmenug" type="checkbox" className="show" />
             <label htmlFor="bmenug" className="burger pseudo button">
