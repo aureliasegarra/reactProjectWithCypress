@@ -45,7 +45,7 @@ npm run server
 ```
 
 ## Status 🎯
-Project not completed
+Project completed
 
 ## Context 📆
 Project developed as a junior web developer. 
